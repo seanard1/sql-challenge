@@ -18,7 +18,12 @@ Analysis: The analysis queries (queries.sql) includes the answers to the provide
 
 ## Citations
 
+TO_DATE
+
 -- https://www.rudderstack.com/guides/queries-casting-postgresql/#:~:text=The%20TO_DATE%20function%20in%20PostgreSQL,to_timestamp(text%2C%20text)%20.
+
+DATE_PART
+
 -- https://www.postgresqltutorial.com/postgresql-date-functions/postgresql-date_part/
 
 I struggled a fair bit with the date formatting. At first, attempts to import the csv were failing because I tried to make the birth_date and hire_date as DATE variables in pgAdmin. This was failing because the csv file contained dates that were not in postgresql's default ISO format. I tried to change the DATESTYLE in pgAdmin, but was unable to successfully import the file.
